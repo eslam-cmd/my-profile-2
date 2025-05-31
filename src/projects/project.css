@@ -1,0 +1,19 @@
+.card-project {
+  border: 1px solid #1976d2;
+  padding: 5px;
+  height: 330px;
+  transition: 0.5s;
+}
+.card-project:hover {
+  transform: translateY(-10px);
+}
+.eye-btn {
+  transition: 0.5s;
+  color: #1976d2;
+}
+.eye-btn:hover {
+  color: #ffff;
+}
+.github-btn:hover {
+  color: #ffff;
+}

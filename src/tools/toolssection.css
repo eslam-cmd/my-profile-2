@@ -1,0 +1,24 @@
+.card-tools {
+  background-color: #444;
+  transition: 0.5s;
+}
+.card-tools:hover {
+  color: #ddd;
+  background-color: #444;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.title-card:hover {
+  color: #ddd;
+}
+.title-card {
+  transition: 0.5s;
+}
+.tools-skils {
+  transition: 0.5s;
+}
+.tools-skils:hover {
+  color: #353f7c;
+}
