@@ -37,7 +37,7 @@ export default function App() {
   useEffect(() => {
     document.body.style.background = darkMode
       ? "#121212" // خلفية داكنة للوضع الليلي
-      : "url('/vidio-star.mp4')"; // فيديو للخلفية النهارية
+      : "#ddd"; // فيديو للخلفية النهارية
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.transition = "background 0.5s ease-in-out"; // ✅ تأثير التلاشي التدريجي
