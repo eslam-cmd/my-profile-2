@@ -12,7 +12,7 @@ import Contact from "./contact/contactsection";
 import Backdrop from "@mui/material/Backdrop";
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [loading, setLoading] = useState(true);
 
   const toggleTheme = () => {
@@ -25,7 +25,7 @@ export default function App() {
       background: {
         default: darkMode ? "#121212" : "#FAF3E0", // خلفية داكنة في الوضع الليلي، شفافة في النهاري
       },
-      text: { primary: darkMode ? "#ffffff" : "#000000" },
+      text: { primary: darkMode ? "#AAA" : "#282828" },
     },
   });
   useEffect(() => {
@@ -37,7 +37,8 @@ export default function App() {
   useEffect(() => {
     document.body.style.background = darkMode
       ? "#121212" // خلفية داكنة للوضع الليلي
-      : "url('https://cdn.pixabay.com/video/2019/08/13/26007-353916139_large.mp4')"; // فيديو للخلفية النهارية
+      : "#F5F5F5"; // فيديو للخلفية النهارية
+    document.body.style.color = darkMode ? "#AAA" : "#282828";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.transition = "background 0.5s ease-in-out"; // ✅ تأثير التلاشي التدريجي

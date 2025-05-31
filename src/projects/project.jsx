@@ -175,17 +175,10 @@ export default function ProjectSection() {
                         sx={{ backgroundColor: "#1976d2", marginTop: "5px" }}
                       />
                       <CardContent sx={{ textAlign: "left" }}>
-                        <Typography
-                          gutterBottom
-                          variant="h5"
-                          sx={{ color: "#222222" }}
-                        >
+                        <Typography gutterBottom variant="h5">
                           {project.title}
                         </Typography>
-                        <Typography
-                          variant="body2"
-                          sx={{ color: "#222222", fontSize: "12px" }}
-                        >
+                        <Typography variant="body2" sx={{ fontSize: "12px" }}>
                           {project.description}
                         </Typography>
                       </CardContent>

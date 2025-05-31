@@ -23,7 +23,7 @@ export default function FooterSection() {
       {/* نص الحقوق */}
       <Typography variant="body2">
         Designed by Islam
-        <span style={{ color: "#1976d2", fontWeight: "800" }}>2025 ©</span>
+        <span style={{ color: "#282828", fontWeight: "800" }}>2025 ©</span>
       </Typography>
 
       {/* أيقونات التواصل

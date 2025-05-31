@@ -19,18 +19,17 @@ export default function MainSection() {
             flexDirection: "column",
             alignItems: "flex-start",
             justifyContent: "flex-start",
-            height: "30vh", // السماح للحجم بالتكيف تلقائيًا
-            padding: { xs: "20px", sm: "30px", md: "50px" }, // تحسين التباعد بين الأجهزة المختلفة
+            height: { xs: "13vh", sm: "13vh", md: "30vh" },
+            padding: { xs: "20px", sm: "30px", md: "50px" },
             marginTop: { xs: "10px", sm: "20px", md: "30px" },
             textAlign: "left",
-            maxWidth: { xs: "100%", sm: "80%", md: "60%" }, // تحديد الحد الأقصى للعرض لتجنب نصوص طويلة جدًا
+            maxWidth: { xs: "100%", sm: "80%", md: "60%" },
           }}
         >
           <Typography
             variant="h2"
             sx={{
-              color: "#121212",
-              fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" }, // تحسين التكيف مع الشاشات الصغيرة
+              fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
               fontWeight: "bold",
             }}
           >
@@ -40,9 +39,8 @@ export default function MainSection() {
           <Typography
             variant="h6"
             sx={{
-              color: "#000",
-              fontSize: { xs: "0.9rem", sm: "1rem", md: "1.2rem" }, // ضبط الحجم بناءً على حجم الشاشة
-              lineHeight: { xs: "1.4", sm: "1.6", md: "1.8" }, // تحسين التباعد بين السطور
+              fontSize: { xs: "0.9rem", sm: "1rem", md: "1.2rem" },
+              lineHeight: { xs: "1.4", sm: "1.6", md: "1.8" },
               maxWidth: "90%",
             }}
           >
