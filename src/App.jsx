@@ -3,7 +3,7 @@ import Header from "./header/header";
 import MainSection from "./main/mainsection";
 import ProjectSection from "./projects/project";
 import ToolsSection from "./tools/ToolsSection";
-import FooterSetion from "./footer/footer";
+import FooterSection from "./footer/footer";
 import React, { useState, useEffect } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -37,7 +37,7 @@ export default function App() {
   useEffect(() => {
     document.body.style.background = darkMode
       ? "#121212" // خلفية داكنة للوضع الليلي
-      : "url('/public/vidio-star.mp4')"; // فيديو للخلفية النهارية
+      : "url('../../public/vidio-star.mp4')"; // فيديو للخلفية النهارية
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.transition = "background 0.5s ease-in-out"; // ✅ تأثير التلاشي التدريجي
@@ -114,7 +114,7 @@ export default function App() {
                   <MainSection />
                   <ToolsSection />
                   <ProjectSection />
-                  <FooterSetion />
+                  <FooterSection />
                 </>
               }
             />
