@@ -1,6 +1,6 @@
 import * as React from "react";
 import emailjs from "emailjs-com";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -40,9 +40,12 @@ export default function Contact() {
         }
       );
   };
-
+  useEffect(() => {
+    console.log("تم تحميل مكون الاتصال");
+  }, []);
   return (
-    <div
+    <section
+      id="contact"
       style={{
         height: "700px",
         justifyContent: "center",
@@ -50,7 +53,7 @@ export default function Contact() {
         textAlign: "center",
       }}
     >
-      <Grid sx={{ mt: 5 }}>
+      <Grid container justifyContent="center" sx={{ mt: 3, mb: 4 }}>
         <Card
           style={{
             boxShadow: "0px 8px 13px rgba(0, 0, 0, 0.5)",
@@ -64,7 +67,7 @@ export default function Contact() {
             <Typography variant="h3" color="primary" sx={{ fontWeight: "700" }}>
               Let's work together
             </Typography>
-            <Typography variant="body1" sx={{ mt: 4, color: "#fff" }}>
+            <Typography variant="body1" sx={{ mt: 4, color: "#222222" }}>
               You can send your inquiries and we will respond to you as soon as
               possible.
             </Typography>
@@ -102,6 +105,7 @@ export default function Contact() {
                   sx={{
                     boxShadow: "0px 8px 13px rgba(0,0,0,0.3)",
                     marginBottom: "20px",
+                    marginTop: "10px",
                   }}
                 >
                   Submit
@@ -143,6 +147,6 @@ export default function Contact() {
           The message was sent successfully.!✅
         </Alert>
       </Snackbar>
-    </div>
+    </section>
   );
 }

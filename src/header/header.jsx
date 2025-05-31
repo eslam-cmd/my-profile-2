@@ -20,7 +20,7 @@ const pages =
         { name: "Home", link: "#home" },
         { name: "Skills & Tools", link: "#skills" },
         { name: "Projects", link: "#project" },
-        { name: "Contact", link: "/contact" },
+        { name: "Contact", link: "#contact" },
       ];
 
 export default function Header({ toggleTheme, darkMode }) {

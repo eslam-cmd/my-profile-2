@@ -1,9 +1,14 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
+import Link from "@mui/material/Link";
 import Button from "@mui/material/Button";
 import DownloadIcon from "@mui/icons-material/Download";
-
+// import icon
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import FacebookIcon from "@mui/icons-material/Facebook";
 export default function MainSection() {
   return (
     <>
@@ -12,36 +17,42 @@ export default function MainSection() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "flex-start", // يحرك النصوص إلى اليسار
-            justifyContent: "flex-start", // يجعل المحتوى يأخذ الزاوية العلوية
-            height: { xs: "10vh", md: "10vh" }, // متجاوب حسب حجم الشاشة
-            padding: { xs: "40px", md: "75px" },
-            marginTop: { xs: "40px", md: "75px" }, // لضبط المسافات
-            textAlign: "left", // يجعل النصوص تبدأ من اليسار
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            height: "30vh", // السماح للحجم بالتكيف تلقائيًا
+            padding: { xs: "20px", sm: "30px", md: "50px" }, // تحسين التباعد بين الأجهزة المختلفة
+            marginTop: { xs: "10px", sm: "20px", md: "30px" },
+            textAlign: "left",
+            maxWidth: { xs: "100%", sm: "80%", md: "60%" }, // تحديد الحد الأقصى للعرض لتجنب نصوص طويلة جدًا
           }}
         >
           <Typography
             variant="h2"
-            sx={{ color: "#fff", fontSize: { xs: "2rem", md: "3rem" } }}
+            sx={{
+              color: "#121212",
+              fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" }, // تحسين التكيف مع الشاشات الصغيرة
+              fontWeight: "bold",
+            }}
           >
             Hi, I'm Islam
           </Typography>
-          <Typography
-            variant="h4"
-            sx={{
-              color: "#aaa",
-              letterSpacing: "1px",
-              fontSize: { xs: "1.2rem", md: "1.8rem" },
-            }}
-          >
-            I'm a front-end developer
-          </Typography>
+
           <Typography
             variant="h6"
-            sx={{ color: "#aaa", fontSize: { xs: "1rem", md: "1.2rem" } }}
+            sx={{
+              color: "#000",
+              fontSize: { xs: "0.9rem", sm: "1rem", md: "1.2rem" }, // ضبط الحجم بناءً على حجم الشاشة
+              lineHeight: { xs: "1.4", sm: "1.6", md: "1.8" }, // تحسين التباعد بين السطور
+              maxWidth: "90%",
+            }}
           >
-            I'm a front-end developer erg okjpeorjg pe
+            Islam Hadiya, 18 years old, is a front-end developer from Aleppo,
+            Syria, specializing in React.js with one year of experience in
+            building interactive and smooth web applications. I work well within
+            teams, and my goal is to develop innovative web solutions with a
+            focus on user experience.
           </Typography>
+
           <Button
             variant="contained"
             sx={{
@@ -53,6 +64,26 @@ export default function MainSection() {
           >
             Download my CV
           </Button>
+          <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
+            <Link href="mailto:hdayaaslam34@gmail.com" target="_blank">
+              <EmailIcon />
+            </Link>
+            <Link
+              href="https://www.facebook.com/islam.hadaya.2025?mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <FacebookIcon sx={{ mr: 2, ml: 2, color: "#3f51b5" }} />
+            </Link>
+            <Link href="https://github.com/eslam-cmd" target="_blank">
+              <GitHubIcon sx={{ color: "currentcolor" }} />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/eslam-hd-60a056357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >
+              <LinkedInIcon sx={{ ml: 2, color: "rgb(101, 115, 195)" }} />
+            </Link>
+          </Box>
         </Box>
       </section>
     </>

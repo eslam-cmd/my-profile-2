@@ -160,7 +160,7 @@ export default function ProjectSection() {
                       maxWidth: 345,
                       width: 250,
                       transition: ".5s",
-                      background: "#36384d48",
+                      background: "#28307248",
                       borderRadius: "10px",
                     }}
                   >
@@ -178,13 +178,13 @@ export default function ProjectSection() {
                         <Typography
                           gutterBottom
                           variant="h5"
-                          sx={{ color: "#ddd" }}
+                          sx={{ color: "#222222" }}
                         >
                           {project.title}
                         </Typography>
                         <Typography
                           variant="body2"
-                          sx={{ color: "#ddd", fontSize: "12px" }}
+                          sx={{ color: "#222222", fontSize: "12px" }}
                         >
                           {project.description}
                         </Typography>

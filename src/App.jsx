@@ -23,7 +23,7 @@ export default function App() {
     palette: {
       mode: darkMode ? "dark" : "light",
       background: {
-        default: darkMode ? "#121212" : "transparent", // خلفية داكنة في الوضع الليلي، شفافة في النهاري
+        default: darkMode ? "#121212" : "#FAF3E0", // خلفية داكنة في الوضع الليلي، شفافة في النهاري
       },
       text: { primary: darkMode ? "#ffffff" : "#000000" },
     },
@@ -37,7 +37,7 @@ export default function App() {
   useEffect(() => {
     document.body.style.background = darkMode
       ? "#121212" // خلفية داكنة للوضع الليلي
-      : "#ddd"; // فيديو للخلفية النهارية
+      : "url('https://cdn.pixabay.com/video/2019/08/13/26007-353916139_large.mp4')"; // فيديو للخلفية النهارية
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.transition = "background 0.5s ease-in-out"; // ✅ تأثير التلاشي التدريجي
@@ -101,26 +101,14 @@ export default function App() {
         </Backdrop>
       )}
       {!loading && (
-        <Router>
+        <>
           <Header toggleTheme={toggleTheme} darkMode={darkMode} />
-
-          {/* ✅ زر تغيير الوضع الليلي */}
-
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <MainSection />
-                  <ToolsSection />
-                  <ProjectSection />
-                  <FooterSection />
-                </>
-              }
-            />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </Router>
+          <MainSection />
+          <ToolsSection />
+          <ProjectSection />
+          <Contact />
+          <FooterSection />
+        </>
       )}
     </ThemeProvider>
   );
