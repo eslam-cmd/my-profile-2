@@ -9,6 +9,22 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
+
+// install pdf
+// function handleDownload() {
+//   fetch("/my-profile-2/Islamcv.pdf")
+//     .then((response) => response.blob())
+//     .then((blob) => {
+//       const url = URL.createObjectURL(blob);
+//       const link = document.createElement("a");
+//       link.href = url;
+//       link.download = "Islamcv.pdf";
+//       document.body.appendChild(link);
+//       link.click();
+//       document.body.removeChild(link);
+//     })
+//     .catch((error) => console.error("حدث خطأ أثناء التنزيل:", error));
+// }
 export default function MainSection() {
   return (
     <>
@@ -52,6 +68,7 @@ export default function MainSection() {
           </Typography>
 
           <Button
+            // onClick={handleDownload}
             variant="contained"
             sx={{
               marginTop: "25px",

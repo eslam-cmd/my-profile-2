@@ -56,7 +56,7 @@ export default function Contact() {
       <Grid container justifyContent="center" sx={{ mt: 3, mb: 4 }}>
         <Card
           style={{
-            boxShadow: "0px 8px 13px rgba(0, 0, 0, 0.5)",
+            boxShadow: "0px 4px 10px rgba(25, 118, 210, 0.37)",
             width: "600px",
             background: "#36384d48",
             border: "1px solid #1976d2",

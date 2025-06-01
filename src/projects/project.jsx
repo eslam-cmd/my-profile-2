@@ -21,7 +21,8 @@ export default function ProjectSection() {
       title: "login page",
       description:
         "This website is a login interface programmed with HTML, CSS.",
-      photo: "/img-projects/imglogin.jpg",
+      photo:
+        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
       linkview: "https://eslam-cmd.github.io/login-page/",
       linkgithub: "https://github.com/eslam-cmd/login-page",
       tech: "htmlcss",
@@ -31,7 +32,8 @@ export default function ProjectSection() {
       title: "Travel and tourism",
       description:
         "This website is for showcasing travel and tourism destinations around the world, programmed with HTML, CSS",
-      photo: "/img-projects/imgtravel.jpg",
+      photo:
+        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
       linkview: "https://eslam-cmd.github.io/A-site-for-tourism-and-travel/",
       linkgithub: "https://github.com/eslam-cmd/A-site-for-tourism-and-travel",
       tech: "htmlcss",
@@ -41,7 +43,8 @@ export default function ProjectSection() {
       title: "Photography page",
       description:
         "This site displays photographs with a simple interface. programmed with HTML, CSS",
-      photo: "/img-projects/imgphotography.jpg",
+      photo:
+        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
       linkview: "https://eslam-cmd.github.io/Photography-page/",
       linkgithub: "https://github.com/eslam-cmd/Photography-page",
       tech: "htmlcss",
@@ -51,7 +54,8 @@ export default function ProjectSection() {
       title: "Weather wep",
       description:
         "This site displays the temperature in any country entered, programmed with HTML, CSS, JavaScript",
-      photo: "/img-projects/imgweather.jpg",
+      photo:
+        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
       linkview: "https://eslam-cmd.github.io/weather-wep/",
       linkgithub: "https://github.com/eslam-cmd/weather-wep",
       tech: "htmlcssjs",
@@ -162,6 +166,7 @@ export default function ProjectSection() {
                       transition: ".5s",
                       background: "#28307248",
                       borderRadius: "10px",
+                      boxShadow: "0px 4px 10px rgba(25, 118, 210, 0.37)",
                     }}
                   >
                     <CardActionArea>

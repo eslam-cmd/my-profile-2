@@ -183,7 +183,7 @@ export default function ToolsSection() {
             <Grid xs={6} sm={4} lg={2} key={card.id}>
               <Card
                 sx={{
-                  boxShadow: "0 4px 8px #0000001a",
+                  boxShadow: "0px 4px 10px rgba(13, 21, 29, 0.37)",
                   textAlign: "center",
                   width: "150px",
                   position: "relative",
