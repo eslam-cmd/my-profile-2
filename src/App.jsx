@@ -23,7 +23,7 @@ export default function App() {
     palette: {
       mode: darkMode ? "dark" : "light",
       background: {
-        default: darkMode ? "#121212" : "#FAF3E0", // خلفية داكنة في الوضع الليلي، شفافة في النهاري
+        default: darkMode ? "url('dark.png')" : "url('light.png')",
       },
       text: { primary: darkMode ? "#AAA" : "#282828" },
     },
@@ -36,12 +36,28 @@ export default function App() {
 
   useEffect(() => {
     document.body.style.background = darkMode
-      ? "#121212" // خلفية داكنة للوضع الليلي
-      : "#F5F5F5"; // فيديو للخلفية النهارية
+      ? "url('dark.png')" // خلفية داكنة للوضع الليلي
+      : "url('light.png')"; // خلفية بالصورة في الوضع النهاري
     document.body.style.color = darkMode ? "#AAA" : "#282828";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.transition = "background 0.5s ease-in-out"; // ✅ تأثير التلاشي التدريجي
+
+    // ✅ إضافة طبقة الضباب فقط في الوضع النهاري
+    if (!darkMode) {
+      const blurLayer = document.createElement("div");
+      blurLayer.style.position = "absolute";
+      blurLayer.style.top = "0";
+      blurLayer.style.left = "0";
+      blurLayer.style.width = "100%";
+      blurLayer.style.height = "100%";
+      blurLayer.style.backdropFilter = "blur(5px)"; // ✅ تطبيق الضباب فقط عند الوضع النهاري
+      blurLayer.style.zIndex = "-1";
+
+      document.body.appendChild(blurLayer);
+
+      return () => document.body.removeChild(blurLayer); // ✅ إزالة الضباب عند تغيير الوضع
+    }
   }, [darkMode]);
 
   return (

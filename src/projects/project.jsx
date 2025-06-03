@@ -19,10 +19,8 @@ export default function ProjectSection() {
     {
       id: 1,
       title: "login page",
-      description:
-        "This website is a login interface programmed with HTML, CSS.",
-      photo:
-        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
+      description: "This website is a login interface",
+      photo: "imglogin.jpg",
       linkview: "https://eslam-cmd.github.io/login-page/",
       linkgithub: "https://github.com/eslam-cmd/login-page",
       tech: "htmlcss",
@@ -31,9 +29,8 @@ export default function ProjectSection() {
       id: 2,
       title: "Travel and tourism",
       description:
-        "This website is for showcasing travel and tourism destinations around the world, programmed with HTML, CSS",
-      photo:
-        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
+        "This website is for showcasing travel and tourism destinations around the world",
+      photo: "imgtravel.png",
       linkview: "https://eslam-cmd.github.io/A-site-for-tourism-and-travel/",
       linkgithub: "https://github.com/eslam-cmd/A-site-for-tourism-and-travel",
       tech: "htmlcss",
@@ -41,10 +38,8 @@ export default function ProjectSection() {
     {
       id: 3,
       title: "Photography page",
-      description:
-        "This site displays photographs with a simple interface. programmed with HTML, CSS",
-      photo:
-        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
+      description: "This site displays photographs with a simple interface",
+      photo: "imgphotography.jpg",
       linkview: "https://eslam-cmd.github.io/Photography-page/",
       linkgithub: "https://github.com/eslam-cmd/Photography-page",
       tech: "htmlcss",
@@ -52,42 +47,22 @@ export default function ProjectSection() {
     {
       id: 4,
       title: "Weather wep",
-      description:
-        "This site displays the temperature in any country entered, programmed with HTML, CSS, JavaScript",
-      photo:
-        "https://tse2.mm.bing.net/th/id/OIP.IUvHf9Rhi_-PWdZ2j0j4IgHaHa?rs=1&pid=ImgDetMain",
+      description: "This site displays the temperature in any country entered",
+      photo: "imgweather.jpg",
       linkview: "https://eslam-cmd.github.io/weather-wep/",
       linkgithub: "https://github.com/eslam-cmd/weather-wep",
       tech: "htmlcssjs",
     },
-    // {
-    //   id: 5,
-    //   title: "Not available now",
-    //   description: "Projects will be uploaded soon..",
-    //   photo:
-    //     "https://tse1.mm.bing.net/th/id/OIP.IWJekDakNkIP_AOfgQxEWgAAAA?rs=1&pid=ImgDetMain",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Not available now",
-    //   description: "Projects will be uploaded soon..",
-    //   photo:
-    //     "https://tse1.mm.bing.net/th/id/OIP.IWJekDakNkIP_AOfgQxEWgAAAA?rs=1&pid=ImgDetMain",
-    // },
-    // {
-    //   id: 7,
-    //   title: "Not available now",
-    //   description: "Projects will be uploaded soon..",
-    //   photo:
-    //     "https://tse1.mm.bing.net/th/id/OIP.IWJekDakNkIP_AOfgQxEWgAAAA?rs=1&pid=ImgDetMain",
-    // },
-    // {
-    //   id: 8,
-    //   title: "Not available now",
-    //   description: "Projects will be uploaded soon..",
-    //   photo:
-    //     "https://tse1.mm.bing.net/th/id/OIP.IWJekDakNkIP_AOfgQxEWgAAAA?rs=1&pid=ImgDetMain",
-    // },
+    {
+      id: 5,
+      title: "hospistal wep",
+      description:
+        "This site displays the temperature in any country entered, programmed with HTML, Bootstrap, JavaScript",
+      photo: "imghospital.jpg",
+      linkview: "https://eslam-cmd.github.io/hospital/",
+      linkgithub: "https://github.com/eslam-cmd/hospital/tree/master",
+      tech: "htmlcssjs",
+    },
   ];
 
   const [selectedTech, setSelectedTech] = React.useState("all");
@@ -189,7 +164,7 @@ export default function ProjectSection() {
                       </CardContent>
                     </CardActionArea>
                     <CardActions
-                      sx={{ justifyContent: "center", paddingBottom: "10px" }}
+                      sx={{ justifyContent: "center", marginBottom: "20px" }}
                     >
                       <Link href={project.linkgithub}>
                         <GitHubIcon
